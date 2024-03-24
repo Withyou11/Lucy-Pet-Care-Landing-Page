@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucy-Pet Care Landing Page</title>
 
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -141,7 +144,11 @@
         <div class="hero__inner">
           <!-- hero media -->
           <div class="hero__media">
-            <div class="hero__img-wrap">
+            <div
+              class="hero__img-wrap"
+              data-aos="zoom-in-right"
+              data-aos-duration="2000"
+            >
               <img src="./assets/img/pet-1.png" alt="pet" class="hero__img" />
 
               <!-- decoration -->
@@ -157,12 +164,22 @@
               />
             </div>
 
-            <div class="hero__img-wrap hero__img-wrap--small">
+            <div
+              class="hero__img-wrap hero__img-wrap--small"
+              data-aos="zoom-in-left"
+              data-aos-delay="1000"
+              data-aos-duration="2000"
+            >
               <img src="./assets/img/pet-2.png" alt="pet" class="hero__img" />
             </div>
 
             <!-- hero list -->
-            <div class="hero__list">
+            <div
+              class="hero__list"
+              data-aos="zoom-in-up"
+              data-aos-duration="2000"
+              data-aos-delay="1500"
+            >
               <div class="hero__item">
                 <img
                   src="./assets/img/pet-3.png"
@@ -274,6 +291,8 @@
                   src="./assets/img/about-1.png"
                   alt="pet"
                   class="about__img"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 />
               </figure>
 
@@ -289,6 +308,8 @@
                   src="./assets/img/about-2.png"
                   alt="pet"
                   class="about__img"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 />
 
                 <!-- decoration -->
@@ -447,6 +468,8 @@
             <div class="service__col">
               <figure class="service__media">
                 <img
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                   src="./assets/img/service-1.png"
                   alt="service"
                   class="service__img"
@@ -1113,5 +1136,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
